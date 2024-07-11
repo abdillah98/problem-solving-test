@@ -30,6 +30,10 @@ function isBalancedBracket(s) {
 }
 
 // Contoh penggunaan
-console.log(isBalancedBracket("{ [ ( ) ] }")); // Output: YES
-console.log(isBalancedBracket("{ [ ( ] ) }")); // Output: NO
-console.log(isBalancedBracket("{ ( ( [ ] ) [ ] ) [ ] }")); // Output: YES
+const example1 = "{ [ ( ) ] }";
+const example2 = "{ [ ( ] ) }";
+const example3 = "{ ( ( [ ] ) [ ] ) [ ] }";
+
+console.log(`"${example1}" 👉 `, isBalancedBracket(example1)); // Output: YES
+console.log(`"${example2}" 👉 `, isBalancedBracket(example2)); // Output: NO
+console.log(`"${example3}" 👉 `, isBalancedBracket(example3)); // Output: YES

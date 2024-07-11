@@ -62,6 +62,5 @@ function highestPalindrome(s, k) {
 
 // Contoh penggunaan
 console.log(highestPalindrome('3943', 1)); // Output: 3993
-console.log(highestPalindrome('092282', 3)); // Output: 992299
+console.log(highestPalindrome('932239', 2)); // Output: 992299
 console.log(highestPalindrome('0011', 1)); // Output: -1
-console.log(highestPalindrome('43261', 2)); // Output: 96269

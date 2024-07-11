@@ -10,7 +10,7 @@ function weightedStrings(s, queries) {
   // Loop melalui string
   for (const char of s) {
     const charWeight = char.charCodeAt(0) - 'a'.charCodeAt(0) + 1;
-    console.log('charWeight', charWeight);
+    // console.log('charWeight', charWeight);
       
       if (char === prevChar) {
           // Jika karakter sama dengan karakter sebelumnya, tingkatkan jumlah pengulangan
@@ -32,12 +32,12 @@ function weightedStrings(s, queries) {
       
       // Membuat hasil berdasarkan queries
       const result = queries.map(query => weights.has(query) ? "Yes" : "No");
-      console.log('result', result)
+      // console.log('result', result)
   
   return result;
 }
 
 // Contoh penggunaan
 const string = "abbcccd";
-const queries = [1, 3, 9, 4];
+const queries = [1, 3, 9, 8];
 console.log(weightedStrings(string, queries)); // Output: ["Yes", "Yes", "Yes", "No"]
